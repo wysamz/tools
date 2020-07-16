@@ -1,0 +1,1621 @@
+
+
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <meta name="author" content="Wysamz">
+      
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
+    
+    
+      
+        <title>工具</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.fe0cca5b.min.css">
+      
+        <link rel="stylesheet" href="assets/stylesheets/palette.a46bcfb3.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#00bcd4">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:300,400,400i,700%7CFira+Code&display=fallback">
+        <style>body,input{font-family:"Noto Sans SC",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Fira Code",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="cyan" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#git" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="." title="工具" class="md-header-nav__button md-logo" aria-label="工具">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            工具
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Git
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="工具" class="md-nav__button md-logo" aria-label="工具">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    工具
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Git
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="." title="Git" class="md-nav__link md-nav__link--active">
+      Git
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    第一章　绪论
+  </a>
+  
+    <nav class="md-nav" aria-label="第一章　绪论">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    1.1　版本控制工具
+  </a>
+  
+    <nav class="md-nav" aria-label="1.1　版本控制工具">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111-cvs-concurrent-versions-system" class="md-nav__link">
+    1.1.1　CVS（ Concurrent Versions System ）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-svn-subversion" class="md-nav__link">
+    1.1.2　SVN（ Subversion ）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113-git" class="md-nav__link">
+    1.1.3　Git
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-git" class="md-nav__link">
+    1.2　Git  的优点
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    1.3　安装
+  </a>
+  
+    <nav class="md-nav" aria-label="1.3　安装">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#131-linux" class="md-nav__link">
+    1.3.1　Linux
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#132-mac-os" class="md-nav__link">
+    1.3.2　Mac OS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#133-windows" class="md-nav__link">
+    1.3.3　Windows
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    第二章　基础操作
+  </a>
+  
+    <nav class="md-nav" aria-label="第二章　基础操作">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    2.1　初始化
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1　初始化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#211" class="md-nav__link">
+    2.1.1　环境变量设置
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#212" class="md-nav__link">
+    2.1.2　创建版本库
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#213" class="md-nav__link">
+    2.1.3　详细说明
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    2.2　暂存区
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-diff" class="md-nav__link">
+    2.3　diff 命令
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-git" class="md-nav__link">
+    2.4　Git 对象
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-git" class="md-nav__link">
+    2.5　Git 重置
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    第一章　绪论
+  </a>
+  
+    <nav class="md-nav" aria-label="第一章　绪论">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    1.1　版本控制工具
+  </a>
+  
+    <nav class="md-nav" aria-label="1.1　版本控制工具">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111-cvs-concurrent-versions-system" class="md-nav__link">
+    1.1.1　CVS（ Concurrent Versions System ）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-svn-subversion" class="md-nav__link">
+    1.1.2　SVN（ Subversion ）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113-git" class="md-nav__link">
+    1.1.3　Git
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-git" class="md-nav__link">
+    1.2　Git  的优点
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    1.3　安装
+  </a>
+  
+    <nav class="md-nav" aria-label="1.3　安装">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#131-linux" class="md-nav__link">
+    1.3.1　Linux
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#132-mac-os" class="md-nav__link">
+    1.3.2　Mac OS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#133-windows" class="md-nav__link">
+    1.3.3　Windows
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    第二章　基础操作
+  </a>
+  
+    <nav class="md-nav" aria-label="第二章　基础操作">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    2.1　初始化
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1　初始化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#211" class="md-nav__link">
+    2.1.1　环境变量设置
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#212" class="md-nav__link">
+    2.1.2　创建版本库
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#213" class="md-nav__link">
+    2.1.3　详细说明
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    2.2　暂存区
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-diff" class="md-nav__link">
+    2.3　diff 命令
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-git" class="md-nav__link">
+    2.4　Git 对象
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-git" class="md-nav__link">
+    2.5　Git 重置
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <!-- MarkdownTOC -->
+
+<ul>
+<li><a href="#">第一章　绪论</a><ul>
+<li><a href="#11">1.1　版本控制工具</a><ul>
+<li><a href="#111-cvs-concurrent-versions-system">1.1.1　CVS（ Concurrent Versions System ）</a></li>
+<li><a href="#112-svn-subversion">1.1.2　SVN（ Subversion ）</a></li>
+<li><a href="#113-git">1.1.3　Git</a></li>
+</ul>
+</li>
+<li><a href="#12-git">1.2　Git  的优点</a></li>
+<li><a href="#13">1.3　安装</a><ul>
+<li><a href="#131-linux">1.3.1　Linux</a></li>
+<li><a href="#132-mac-os">1.3.2　Mac OS</a></li>
+<li><a href="#133-windows">1.3.3　Windows</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_1">第二章　基础操作</a><ul>
+<li><a href="#21">2.1　初始化</a><ul>
+<li><a href="#211">2.1.1　环境变量设置</a></li>
+<li><a href="#212">2.1.2　创建版本库</a></li>
+<li><a href="#213">2.1.3　详细说明</a></li>
+</ul>
+</li>
+<li><a href="#22">2.2　暂存区</a></li>
+<li><a href="#23-diff">2.3　diff 命令</a></li>
+<li><a href="#24-git">2.4　Git 对象</a></li>
+<li><a href="#25-git">2.5　Git 重置</a></li>
+</ul>
+</li>
+</ul>
+<!-- /MarkdownTOC -->
+
+<h1 id="git">Git<a class="headerlink" href="#git" title="Permanent link">&para;</a></h1>
+<h2 id="_1">第一章　绪论<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="11">1.1　版本控制工具<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
+<h4 id="111-cvs-concurrent-versions-system">1.1.1　CVS（ Concurrent Versions System ）<a class="headerlink" href="#111-cvs-concurrent-versions-system" title="Permanent link">&para;</a></h4>
+<ul>
+<li>封装了已有的针对单一文件的多版本管理工具 <em>RCS</em> </li>
+<li>基于 <em>C/S</em> 架构。版本库位于服务器端，是一个 <em>RCS</em> 文件容器</li>
+<li><em>RCS</em> 文件以 <code>,v</code>为 后缀，用于保存对应文件的历次更改历史</li>
+<li><em>RCS</em> 文件中只保留一个版本的完全拷贝，其他历次更改仅存储差异</li>
+<li><em>RCS</em> 文件的命名直接影响工作区检出的文件名</li>
+<li>最早提出了提交（ <em>Commit</em> ）、检入（ <em>Checkin</em> ）、检出（ <em>Checkout</em> ）、里程碑（ <em>Tag</em> ）、分支（ <em>Branch</em> ）等概念</li>
+</ul>
+<p><img alt="cvs" src="imgs/git/cvs.png" /></p>
+<h4 id="112-svn-subversion">1.1.2　SVN（ Subversion ）<a class="headerlink" href="#112-svn-subversion" title="Permanent link">&para;</a></h4>
+<ul>
+<li>后端存储从一开始的 <em>BDB</em> （简单的关系型数据库）转变到 <em>FSFS</em> （文件数据库）</li>
+<li>每一次提交，都会在服务器端的 <code>:file:db/revs</code> 和 <code>:file:db/revprops</code>目录下各创建一个以 <ins class="critic">顺序数字编号</ins> 命名的文件<ul>
+<li><code>:file:db/revs</code> 下的变更集文件：记录与上一个提交之间的差异，字母 <em>A</em> 表示新增， <em>M</em> 表示修改， <em>D</em> 表示删除</li>
+<li><code>:file:db/revprops</code> 下的同名文件：保存着提交日志、作者、提交时间等版本属性</li>
+</ul>
+</li>
+<li>拥有全局版本号。每提交一次， <em>SVN</em> 的版本号就会自动加一</li>
+<li>实现原子提交。部分文件提交失败不影响其他文件的提交</li>
+<li>文件名不受服务器操作系统的字符集及大小写的限制。支持重名的文件和目录</li>
+<li>轻量级拷贝，操作类似于创建符号链接，仅需在 <code>:file:db/revs</code> 下的变更
+集文件中用特定语法标注，可在不同的名字空间下创建不同的目录以实现里程碑和分支的创建</li>
+<li>集中式版本控制</li>
+</ul>
+<h4 id="113-git">1.1.3　Git<a class="headerlink" href="#113-git" title="Permanent link">&para;</a></h4>
+<ul>
+<li>分布式版本控制。每个人都工作在通过克隆操作建立的本地版本库中</li>
+<li>几乎所有操作包括查看提交日志、提交、创建里程碑和分支、合并分支、回退等都直接在本地完成而不需要网络连接</li>
+<li>安全性强。重要操作使用 <em>SHA1</em> 哈希值</li>
+</ul>
+<h3 id="12-git">1.2　Git  的优点<a class="headerlink" href="#12-git" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>数据备份</p>
+<ul>
+<li>提交到本地仓库
+    <div class="highlight"><pre><span></span><code>$ git add -u # 如果创建了新文件，可以执行 git add -i 命令。
+$ git commit
+</code></pre></div></li>
+<li>推送到公司的仓库
+    <div class="highlight"><pre><span></span><code>$ git push
+</code></pre></div></li>
+<li>
+<p>自动同步到外网 <em>Git</em> 服务器的镜像</p>
+<p><em>mirror</em> 版本库只读。</p>
+</li>
+</ul>
+<p><img alt="git的优点" src="imgs/git/git%E7%9A%84%E4%BC%98%E7%82%B9.png" /></p>
+</li>
+<li>
+<p>异地协同工作</p>
+<ul>
+<li>从镜像版本库同步数据到本地
+    <div class="highlight"><pre><span></span><code>$ git pull mirror master
+</code></pre></div></li>
+<li>提交到另一个远程版本库
+    <div class="highlight"><pre><span></span><code>$ git push home
+</code></pre></div></li>
+<li>从远程版本库同步数据到公司电脑
+    <div class="highlight"><pre><span></span><code>$ git pull home master
+</code></pre></div></li>
+<li>其他同事拉取或推送数据
+    <div class="highlight"><pre><span></span><code>$ git pull
+$ git push
+</code></pre></div>
+<img alt="git的优点2" src="imgs/git/git%E7%9A%84%E4%BC%98%E7%82%B92.png" /></li>
+</ul>
+</li>
+<li>
+<p>现场版本控制</p>
+<p>在客户现场或在产品部署的现场，进行源代码的修改，并进行版本控制，以便在完成修改后能够将修改结果甚至修改过程一并带走，且能将修改结果合并至项目对应的代码库中。</p>
+<ul>
+<li>在需要版本控制的目录下初始化
+    <div class="highlight"><pre><span></span><code>$ git init
+</code></pre></div></li>
+<li>添加文件并提交
+    <div class="highlight"><pre><span></span><code>$ git add -A
+$ git commit -m &quot;initialized&quot;
+</code></pre></div></li>
+<li>为初始提交建立一个里程碑 <em>v1</em>
+    <div class="highlight"><pre><span></span><code>$ git tag v1
+</code></pre></div></li>
+<li>在工作区中修改文件，提交
+    <div class="highlight"><pre><span></span><code>$ git commit -a
+</code></pre></div></li>
+<li>
+<p>从v1开始的历次提交逐一导出为补丁文件</p>
+<p>转换的补丁文件都包含一个数字前缀，并提取提交日志信息作为文件名，支持二进制文件。
+<div class="highlight"><pre><span></span><code>$ git format-patch v1..HEAD
+0001-Fix-typo-help-to-help.patch
+0002-Add-I18N-support.patch
+0003-Translate-for-Chinese.patch
+</code></pre></div></p>
+</li>
+<li>
+<p>通过邮件等方式将补丁文件发出
+    <div class="highlight"><pre><span></span><code>$ git send-email *.patch
+</code></pre></div></p>
+</li>
+</ul>
+</li>
+<li>
+<p>避免引入辅助目录</p>
+<p>防止目录下的文件列表的暴露，以及辅助目录下文件原始拷贝所带来的效率折损。</p>
+</li>
+<li>
+<p>重写提交说明</p>
+<ul>
+<li>进入提交说明编辑界面
+    <div class="highlight"><pre><span></span><code>$ git commit --amend
+</code></pre></div></li>
+<li>修改某个历史提交的说明（变基操作）
+    <div class="highlight"><pre><span></span><code>$ git rebase -i &lt;commit-id&gt;^
+</code></pre></div></li>
+</ul>
+</li>
+<li>
+<p>提交撤回</p>
+<ul>
+<li>删除提交中引入的大文件
+    <div class="highlight"><pre><span></span><code>$ git rm --cached &lt;del-filename&gt;
+$ git commit --amend
+</code></pre></div></li>
+<li>变基操作</li>
+</ul>
+</li>
+<li>
+<p>提交列表</p>
+<p>一个提交完成一件事。 <em>Git</em> 通过 <mark class="critic">提交暂存区</mark> 实现对提交内容的定制。</p>
+<ul>
+<li>
+<p>将修改内容加入提交暂存区
+    <div class="highlight"><pre><span></span><code>$ git add
+
+# 所有修改过的文件
+$ git add -u
+
+# 本地删除文件和新增文件
+$ git add -A
+
+# 一个文件内的部分修改内容
+$ git add -p
+</code></pre></div></p>
+</li>
+<li>
+<p>暂存区中的文件可以再次修改，再次 <code>add</code> 才提交</p>
+<p>因此一个修改的文件可以拥有两个版本，在提交暂存区中有一个版本，在工作区中有另外一个版本。</p>
+</li>
+<li>
+<p>将登记在暂存区中的内容提交到本地仓库
+    <div class="highlight"><pre><span></span><code>$ git commit
+</code></pre></div></p>
+</li>
+<li>
+<p>提交允许多次撤销</p>
+</li>
+</ul>
+</li>
+<li>
+<p>差异比较
+    <div class="highlight"><pre><span></span><code>$ git diff
+
+# 缓存区中文件的修改
+$ git diff --cached
+</code></pre></div></p>
+</li>
+<li>
+<p>工作进度保存</p>
+<ul>
+<li>保存当前工作进度，并切换到新分支
+    <div class="highlight"><pre><span></span><code>$ git stash
+$ git checkout &lt;new_branch&gt;
+</code></pre></div></li>
+<li>切换回原分支，并恢复工作进度
+    <div class="highlight"><pre><span></span><code>$ git checkout &lt;orignal_branch&gt;
+$ git stash pop
+</code></pre></div></li>
+</ul>
+</li>
+<li>
+<p>分页器</p>
+<ul>
+<li>
+<p>多数 <em>Git</em> 命令自带分页器，翻屏时使用了 <em>vim</em> 风格的热键</p>
+<table>
+<thead>
+<tr>
+<th>按键</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>q</code></td>
+<td>退出分页器</td>
+</tr>
+<tr>
+<td><code>h</code></td>
+<td>分页器帮助</td>
+</tr>
+<tr>
+<td><code>space</code> / <code>b</code></td>
+<td>上翻  / 下翻一页</td>
+</tr>
+<tr>
+<td><code>d</code> / <code>u</code></td>
+<td>上翻  / 下翻半页</td>
+</tr>
+<tr>
+<td><code>j</code> / <code>u</code></td>
+<td>上翻  / 下翻一行</td>
+</tr>
+<tr>
+<td><code>left</code> / <code>right</code></td>
+<td>左 / 右滚动</td>
+</tr>
+<tr>
+<td><code>/pattern</code> / <code>?pattern</code></td>
+<td>向下 / 上寻找和 <em>pattern</em> 匹配的内容</td>
+</tr>
+<tr>
+<td><code>n</code> / <code>N</code></td>
+<td>向前 / 后继续寻找</td>
+</tr>
+<tr>
+<td><code>g</code>  / <code>G</code> / <code>&lt;num&gt; g</code></td>
+<td>跳到首行 / 末行 / 对应行</td>
+</tr>
+<tr>
+<td><code>!&lt;command&gt;</code></td>
+<td>以执行 <em>Shell</em> 命令</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>部分 <em>Git</em> 命令默认未提供分页器</p>
+<p>以 <code>git status</code> 为例。
+<div class="highlight"><pre><span></span><code># temporarily
+$ git -p status
+$ git -paginate  status
+
+# permanently
+$ git config --global pager.status true
+</code></pre></div></p>
+</li>
+<li>
+<p>自动折行
+    <div class="highlight"><pre><span></span><code># method 1
+$ export LESS=FRX
+
+# method 2
+$ git config --global core.pager &#39;less -+$LESS -FRX&#39;
+</code></pre></div></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="13">1.3　安装<a class="headerlink" href="#13" title="Permanent link">&para;</a></h3>
+<h4 id="131-linux">1.3.1　Linux<a class="headerlink" href="#131-linux" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>包管理器方式</p>
+<p>版本可能不是最新， <code>git</code> 与 <code>git-core</code> 名称混用。</p>
+<table>
+<thead>
+<tr>
+<th>包</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git</code></td>
+<td>核心包</td>
+</tr>
+<tr>
+<td><code>git-svn</code> 、 <code>git-email</code> 、 <code>gitk</code></td>
+<td><em>Git</em> 软件包的一部分，因依赖不同而单独作为软件包发布</td>
+</tr>
+<tr>
+<td><code>git-doc</code></td>
+<td><em>Git</em> 的 <em>HTML</em> 格式文档。<br>通过 <code>$ git help -w &lt;sub-command&gt;</code> 打开相关子命令的 <em>HTML</em> 帮助</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code># Ubuntu 10.10(maverick)+, Debian(squeeze)+
+$ sudo aptitude install git
+$ sudo aptitude install git-doc git-svn git-email gitk
+
+# Ubuntu 10.04(lucid)-, Debian(lenny)-
+$ sudo aptitude install git-core
+$ sudo aptitude install git-doc git-svn git-email gitk
+
+# RHEL, Fedora, CentOS
+$ yum install git
+$ yum install git-svn git-email gitk
+</code></pre></div>
+
+</li>
+<li>
+<p>源码方式</p>
+<ul>
+<li>从 <a href="https://git-scm.com/">Git 官网</a>下载源码包</li>
+<li>解压并进入相应目录
+    <div class="highlight"><pre><span></span><code>$ tar -jxvf git-1.7.3.5.tar.bz2
+$ cd git-1.7.3.5/
+</code></pre></div></li>
+<li>
+<p>加入环境变量</p>
+<p>详细安装方法写在 <code>INSTALL</code> 文件中。
+<div class="highlight"><pre><span></span><code>$ make prefix=/usr/local all
+$ sudo make prefix=/usr/local install
+</code></pre></div></p>
+</li>
+<li>
+<p>安装 Git 文档</p>
+<p>编译文档依赖 <code>asciidoc</code> 。</p>
+<div class="highlight"><pre><span></span><code>$ make prefix=/usr/local doc info
+$ sudo make prefix=/usr/local  install install-doc install-html install-info
+</code></pre></div>
+
+</li>
+</ul>
+</li>
+<li>
+<p>Git 版本库方式</p>
+<p>用于 <em>Git</em> 的更新。</p>
+<ul>
+<li>
+<p>克隆 Git 版本库到本地
+    <div class="highlight"><pre><span></span><code>$ git clone git://git.kernel.org/pub/scm/git/git.git
+$ cd git
+</code></pre></div></p>
+</li>
+<li>
+<p>在工作区中更新
+    <div class="highlight"><pre><span></span><code>$ git pull
+</code></pre></div></p>
+</li>
+<li>
+<p>清理工作
+    <div class="highlight"><pre><span></span><code>$ git clean -fdx
+$ git reset --hard
+</code></pre></div></p>
+</li>
+<li>
+<p>从里程碑中选择最新的版本</p>
+<div class="highlight"><pre><span></span><code>$ git tag
+...
+v1.7.3.5
+</code></pre></div>
+
+</li>
+<li>
+<p>检出该版本的代码
+    <div class="highlight"><pre><span></span><code>$ git checkout v1.7.3.5
+</code></pre></div></p>
+</li>
+<li>
+<p>执行安装
+    <div class="highlight"><pre><span></span><code>$ make prefix=/usr/local all doc info
+$ sudo make prefix=/usr/local install install-doc install-html install-info
+</code></pre></div></p>
+</li>
+<li>
+<p>批量安装不同版本的脚本
+    <div class="highlight"><pre><span></span><code><span class="ch">#!/bin/sh</span>
+
+<span class="k">for</span> ver in <span class="se">\</span>
+ v1.5.0 <span class="se">\</span>
+ v1.7.3.5 <span class="se">\</span>
+ v1.7.4-rc1 <span class="se">\</span>
+<span class="p">;</span> <span class="k">do</span>
+     <span class="nb">echo</span> <span class="s2">&quot;Begin install Git </span><span class="nv">$ver</span><span class="s2">.&quot;</span><span class="p">;</span>
+     git reset --hard
+     git clean -fdx
+     git checkout <span class="nv">$ver</span> <span class="o">||</span> <span class="nb">exit</span> <span class="m">1</span>
+     make <span class="nv">prefix</span><span class="o">=</span>/opt/git/<span class="nv">$ver</span> all <span class="o">&amp;&amp;</span> <span class="se">\</span>
+     sudo make <span class="nv">prefix</span><span class="o">=</span>/opt/git/<span class="nv">$ver</span> install <span class="o">||</span> <span class="nb">exit</span> <span class="m">1</span>
+     <span class="nb">echo</span> <span class="s2">&quot;Installed Git </span><span class="nv">$ver</span><span class="s2">.&quot;</span>
+<span class="k">done</span>
+</code></pre></div></p>
+</li>
+</ul>
+</li>
+<li>
+<p>命令补齐</p>
+<p>源码方式安装 <em>Git</em> ，需要配置命令补齐。</p>
+<ul>
+<li>
+<p>将Git源码包中的命令补齐脚本复制到 <code>:file:bash-completion</code>对应的目录中
+    <div class="highlight"><pre><span></span><code>$ cp contrib/completion/git-completion.bash  /etc/bash_completion.d/
+</code></pre></div></p>
+</li>
+<li>
+<p>重新加载自动补齐脚本
+    <div class="highlight"><pre><span></span><code>$ . /etc/bash_completion
+</code></pre></div></p>
+</li>
+<li>
+<p>自动加载脚本</p>
+<p>在本地配置文件 <code>:file:~/.bash_profile</code>或全局文件 <code>:file:/etc/bashrc</code> 中添加：
+<div class="highlight"><pre><span></span><code>if [ -f /etc/bash_completion ]; then
+     . /etc/bash_completion
+fi
+</code></pre></div></p>
+</li>
+</ul>
+</li>
+<li>
+<p>中文支持</p>
+<ul>
+<li>
+<p>UTF-8</p>
+<p>提交说明、提交历史、文件名、里程碑中都可以正常显示中文。</p>
+<p>如出现乱码，则可以通过以下命令解决。
+<div class="highlight"><pre><span></span><code>$ git config --global core.quotepath false
+</code></pre></div></p>
+</li>
+<li>
+<p>GBK</p>
+<div class="highlight"><pre><span></span><code>$ git config --global i18n.logOutputEncoding gbk
+$ git config --global i18n.commitEncoding gbk
+</code></pre></div>
+
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="132-mac-os">1.3.2　Mac OS<a class="headerlink" href="#132-mac-os" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>二进制发布包方式</p>
+<p>从 <a href="http://code.google.com/p/git-osx-installer/">git-osx-installer 官网</a>下载 <code>leopard.dmg</code> 安装包。</p>
+<p>点击 <code>.dmg</code> 将其挂载到 <em>Finder</em> 中，并打开。点击 <code>.pkg</code> 开始安装。</p>
+<p>完毕后， <em>Git</em> 被安装到 <code>file:/usr/local/git/bin/</code> 目录下。重启终端。</p>
+</li>
+<li>
+<p>Xcode 方式</p>
+<p>从商店安装 <em>Xcode</em> 。</p>
+<p>查看安装路径。
+<div class="highlight"><pre><span></span><code>$ xcode-select --print-path /Applications/Xcode.app/Contents/Developer
+</code></pre></div></p>
+<p>调用在 <em>Xcode</em> 路径中的 <em>Git</em> 工具。
+<div class="highlight"><pre><span></span><code>$ xcrun git --version
+</code></pre></div></p>
+<p>在终端下运行  <em>Git</em> 。
+<div class="highlight"><pre><span></span><code>$ cat /etc/paths.d/xcode /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin /Applications/Xcode.app/Contents/Developer/usr/bin
+</code></pre></div></p>
+</li>
+<li>
+<p>Homebrew 方式</p>
+<p>安装 <em>Homebrew</em> 。
+<div class="highlight"><pre><span></span><code>$ ruby -e  &quot;$(curl -fsSL https://gist.github.com/raw/323731/install_homebrew.rb)&quot;
+</code></pre></div></p>
+<p><em>Homebrew</em> 目录位于 <code>:file:/usr/local/bin/brew</code> 。
+<em>Homebrew</em> 支持的软件的安装指引文件位于 <code>:file:/usr/local/Library/Formula/</code> 。</p>
+<p>安装 <em>Git</em> 。
+<div class="highlight"><pre><span></span><code>$ brew install git
+</code></pre></div></p>
+<p><em>Git</em> 目录位于 <code>:file:/usr/local/Cellar/git/1.7.3.5</code> 。</p>
+<p>查看某个软件包安装的详细路径和安装内容。</p>
+<div class="highlight"><pre><span></span><code>$ brew list git
+/usr/local/Cellar/git/1.7.3.5/bin/gitk
+...
+</code></pre></div>
+
+</li>
+<li>
+<p>源码方式
+    可以安装历史版本或者未发布版本。
+    <div class="highlight"><pre><span></span><code>$ brew install asciidoc
+$ brew install docbook2x
+$ brew install xmlto
+
+$ make prefix=/usr/local all doc info
+$ sudo make prefix=/usr/local install  install-doc install-html install-info
+</code></pre></div></p>
+</li>
+<li>
+<p>命令补齐</p>
+<p>安装 <em>bash-completion</em> 软件包。
+<div class="highlight"><pre><span></span><code>$ brew search completion
+$ brew install bash-completion
+</code></pre></div></p>
+<p>在 <code>file:~/.bash_profile</code> 文件中追加：
+<div class="highlight"><pre><span></span><code>if [ -f $(brew --prefix)/etc/bash_completion ]; then
+     . $(brew --prefix)/etc/bash_completion
+fi
+</code></pre></div></p>
+<p>在当前 <em>shell</em> 加载命令补齐
+<div class="highlight"><pre><span></span><code>. $(brew --prefix)/etc/bash_completion
+</code></pre></div></p>
+</li>
+<li>
+<p>其他辅助工具的安装</p>
+<table>
+<thead>
+<tr>
+<th>软件包</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>gnupg</em></td>
+<td>数字签名和加密工具。在为 <em>Git</em> 版本库建立签名里程碑时会用到</td>
+</tr>
+<tr>
+<td><em>md5sha1sum</em></td>
+<td>生成 <em>MD5</em> 或 <em>SHA1</em> 摘要。在研究 <em>Git</em> 版本库中的对象过程中会用到</td>
+</tr>
+<tr>
+<td><em>cvs2svn</em></td>
+<td><em>CVS</em> 版本库迁移到 <em>SVN</em> 或 <em>Git</em> 的工具。在版本库迁移时会用到</td>
+</tr>
+<tr>
+<td><em>stgit</em></td>
+<td><em>Git</em> 的补丁和提交管理工具</td>
+</tr>
+<tr>
+<td><em>quilt</em></td>
+<td>一种补丁管理工具。在介绍 <em>Topgit</em> 时用到</td>
+</tr>
+<tr>
+<td><em>gitx</em></td>
+<td>更强大的图形工具</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h4 id="133-windows">1.3.3　Windows<a class="headerlink" href="#133-windows" title="Permanent link">&para;</a></h4>
+<p><code>.exe</code>安装。</p>
+<h2 id="_2">第二章　基础操作<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="21">2.1　初始化<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
+<h4 id="211">2.1.1　环境变量设置<a class="headerlink" href="#211" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code># 用户名和邮箱
+$ git config --global user.name &lt;uname&gt;
+$ git config --global user.email &lt;email&gt;
+
+# 本用户添加 Git 命令别名
+$ git config --global alias.st status
+$ git config --global alias.ci &quot;commit -s&quot;
+
+# 管理员让所有用户可以使用别名
+$ sudo git config --system alias.br branch
+</code></pre></div>
+
+<h4 id="212">2.1.2　创建版本库<a class="headerlink" href="#212" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>初始化</p>
+<div class="highlight"><pre><span></span><code># 初始化版本库，并生成工作区目录
+$ git init &lt;projname&gt;
+</code></pre></div>
+
+<p>以下假定工作区为 <code>demo</code>。</p>
+<p>工作区的 <code>.git</code> 目录即版本库（仓库）。在工作区中执行 <code>git</code> 命令时，会逐级向上查找 <code>.git</code> 版本库。</p>
+<p>版本库可以异地克隆，因此不用担心会被破坏。</p>
+</li>
+<li>
+<p>创建文件并提交到版本库</p>
+<div class="highlight"><pre><span></span><code># 创建文件
+$ echo &quot;Hello.&quot; &gt; welcome.txt
+
+# 添加到暂存区
+$ git add welcome.txt
+
+# 提交到本地版本库（附上提交说明）
+$ git commit -m &quot;test&quot;
+
+# 提交到本地版本库（进入编辑模式）
+ $ git commit
+
+# 提交结果
+ [master (root-commit) 0f2860c] test
+ 1 file changed, 1 insertion(+)
+ create mode 100644 welcome.txt
+</code></pre></div>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>结果信息：</p>
+<ul>
+<li>当前分支：<code>master</code></li>
+<li>首次提交：<code>root-commit</code> 根提交</li>
+<li>提交 <em>ID</em> ：<code>0f2860c</code></li>
+<li>提交说明：<code>test</code></li>
+<li>一个文件修改：<code>1 file changed</code></li>
+<li>一行插入：<code>insertion(+)</code></li>
+</ul>
+</div>
+<table>
+<thead>
+<tr>
+<th>commit 参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-m &lt;brief&gt;</code></td>
+<td>提交时附加说明</td>
+</tr>
+<tr>
+<td><code>-s</code></td>
+<td>在提交说明中自动添加上提交者姓名、邮件地址等签名标识</td>
+</tr>
+<tr>
+<td><code>-a</code></td>
+<td>对本地所有变更的文件执行提交操作。不推荐使用</td>
+</tr>
+<tr>
+<td><code>--allow-empty</code></td>
+<td>允许暂存区文件在没有任何修改的情况下进行空白提交</td>
+</tr>
+<tr>
+<td><code>--amend</code></td>
+<td>对上次提交进行修正（在改正用户信息等错误后执行），不会产生另外的新提交</td>
+</tr>
+<tr>
+<td><code>--reset-author</code></td>
+<td>重置提交者的 <em>ID</em></td>
+</tr>
+</tbody>
+</table>
+<p>通过 <code>$ git log</code> 查看提交历史。</p>
+</li>
+</ul>
+<h4 id="213">2.1.3　详细说明<a class="headerlink" href="#213" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>查看版本库和工作区位置</p>
+<div class="highlight"><pre><span></span><code># 版本库绝对路径
+$ git rev-parse --git-dir
+
+# 工作区绝对路径
+$ git rev-parse --show-toplevel
+
+# 当前目录相对于工作区根目录的相对路径
+$ git rev-parse --show-prefix
+
+# 当前目录到根目录的深度
+$ git rev-parse --show-cdup
+</code></pre></div>
+
+</li>
+<li>
+<p>配置文件</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>优先级</th>
+<th>路径</th>
+<th>编辑命令</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>版本库配置文件</td>
+<td>高</td>
+<td><code>workspace/.git/config</code></td>
+<td><code>$ git config -e</code></td>
+</tr>
+<tr>
+<td>全局配置文件</td>
+<td>中</td>
+<td><code>/home/user1/.gitconfig</code></td>
+<td><code>$ git config -e --global</code></td>
+</tr>
+<tr>
+<td>系统配置文件</td>
+<td>低</td>
+<td><code>/etc/gitconfig</code>, <br ><code>/usr/local/etc/gitconfig</code></td>
+<td><code>$ git config -e --system</code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Tip<p><em>Windows</em> 下：</p>
+<ul>
+<li>全局配置文件：<code>C:/Users/Administrator/gitconfig</code></li>
+<li>系统配置文件：<code>Git/etc/gitconfig</code></li>
+</ul>
+</p>
+</div>
+<div class="highlight"><pre><span></span><code># 读取或设置某节下某个键的值
+$ git config user.name [jacq]
+
+# 读取或设置指定路径的 .ini 文件（如无则创建）的键
+$ GIT_CONFIG=test.ini git config a.b [&quot;hello, world&quot;]
+
+# 删除某个键值对
+$ git config --unset user.name
+</code></pre></div>
+
+</li>
+</ul>
+<h3 id="22">2.2　暂存区<a class="headerlink" href="#22" title="Permanent link">&para;</a></h3>
+<p>通过 <code>$ git status</code> 查看文件状态，参数 <code>-s</code> 进入精简模式。</p>
+<table>
+<thead>
+<tr>
+<th>结果</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>_M a.txt</code></td>
+<td>（第一列空格）工作区的文件处于中间状态，即修改后未加入暂存区</td>
+</tr>
+<tr>
+<td><code>M  a.txt</code></td>
+<td>版本库中的文件和处于中间状态，即加入暂存区后未提交</td>
+</tr>
+<tr>
+<td><code>MM a.txt</code></td>
+<td>处于两种情形下，即加入暂存区后，再次修改但没有再次加入暂存区</td>
+</tr>
+</tbody>
+</table>
+<p>暂存区（ <em>Stage</em> / <em>Index</em>  ）位于 <code>.git/index</code> ，是一个包含文件索引的目录树，类似一个虚拟的工作区，记录了文件名、文件的状态信息（时间戳、文件长度等）。</p>
+<p>文件的内容保存在 <em>Git</em> 对象库 <code>.git/objects</code>目录中，文件索引建立了文件和对象库中对象实体之间的对应。</p>
+<p><em>Git</em> 通过扫描 <code>index</code> 文件的大小和时间戳，可以快速判断工作区中的文件是否发生变更。</p>
+<p><img alt="暂存区" src="imgs/git/%E6%9A%82%E5%AD%98%E5%8C%BA.png" /></p>
+<div class="highlight"><pre><span></span><code># 工作区修改的文件内容被写入到对象库中的一个新的对象中，而该对象的ID被记录在 index 中
+$ git add &lt;file&gt;
+
+# 暂存区的目录树写到对象库中， master 分支会做相应的更新
+$ git commit
+
+# 暂存区的目录树被 master 分支指向的目录树所替换，但是工作区不受影响
+$ git reset HEAD
+
+# 接从暂存区删除文件，工作区不受影响
+$ git rm --cached &lt;file&gt;
+
+# 用暂存区全部或指定的文件来替换工作区的文件
+$ git checkout .
+$ git checkout -- &lt;file&gt;
+
+# 会用 HEAD 指向的 master 分支中的全部或者部分文件替换暂存区及工作区中的文件
+git checkout HEAD .
+git checkout HEAD &lt;file&gt;
+
+# 清除工作区中未加入版本库的内容（未被追踪）
+$ git clean -fd
+
+# HEAD（版本库中当前提交）指向的目录树，&#39;-l&#39; 表示显示字节长度
+$ git ls-tree -l HEAD
+
+# 缓存区目录树
+$ git ls-files -s
+
+# 缓存区写入对象库后，查看指定 ID 的目录树， ID 可缩写
+$ git write-tree
+9431f4a3f3e1504e03659406faa9529f83cd56f8
+$ git ls-tree -l 9431f4a
+040000 tree 53583ee687fbb2e913d18d508aefd512465b2092 - a
+100644 blob 51dbfd25a804c30e9d8dc441740452534de8264b 34 welcome.txt
+
+# 递归显示每课目录树
+$ git write-tree | xargs git ls-tree -l -r -t
+</code></pre></div>
+
+<h3 id="23-diff">2.3　diff 命令<a class="headerlink" href="#23-diff" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code># 工作区和暂存区比较
+$ git diff
+
+# 暂存区和 HEAD 比较
+$ git diff --cached
+
+# 工作区和 HEAD 比较
+$ git diff HEAD
+</code></pre></div>
+
+<h3 id="24-git">2.4　Git 对象<a class="headerlink" href="#24-git" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>对象内容</p>
+<p>有三种类型的对象：提交（ <em>commit</em> ）、目录树（ <em>tree</em> ）、文件（ <em>blob</em> ）。</p>
+<div class="highlight"><pre><span></span><code># 查看最近一条提交对象。&#39;--pretty=raw&#39; 可以观察父属性
+$ git log -1 --pretty=raw
+commit e695606fc5e31b2ff9038a48a3d363f4c21a3d86
+tree f58da9a820e3fd9d84ab2ca2f1b467ac265038f9
+parent a0c641e92b10d8bcca1ed1bf84ca80340fdefee6
+
+# 查看各个对象的关联树
+$ git log --pretty=raw --graph e695606f
+</code></pre></div>
+
+<table>
+<thead>
+<tr>
+<th>字段值</th>
+<th>说明</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>commit</em></td>
+<td>本次提交的唯一标识</td>
+<td><em>commit</em></td>
+</tr>
+<tr>
+<td><em>tree</em></td>
+<td>本次提交所对应的目录树</td>
+<td><em>tree</em></td>
+</tr>
+<tr>
+<td><em>parent</em></td>
+<td>上一次提交</td>
+<td><em>commit</em></td>
+</tr>
+</tbody>
+</table>
+<p><em>ID</em> 是 <em>SHA1</em> 散列值，前 <em>2</em> 位作为目录名，后 <em>48</em> 位作为文件名。</p>
+<blockquote>
+<p>commit ID =   sha1("commit objSize\000"+ objContent )
+file ID = sha1("blob objSize\0000"+ objContent)
+tree ID = sha1("tree objSize\0000"+ objContent)</p>
+</blockquote>
+<p><div class="highlight"><pre><span></span><code># 查看 HEAD 对应的提交的内容
+$ git cat-file commit HEAD
+tree f58da9a820e3fd9d84ab2ca2f1b467ac265038f9
+parent a0c641e92b10d8bcca1ed1bf84ca80340fdefee6
+xxx
+
+# 提交信息的长度
+$ git cat-file commit HEAD | wc -c
+234
+
+# 手动计算，与原 ID一致
+$ ( printf &quot;commit 234\000&quot;; git cat-file commit HEAD ) | sha1sum
+e695606fc5e31b2ff9038a48a3d363f4c21a3d86
+</code></pre></div>
+<br>
+通过<code>$ git cat-file &lt;id&gt;</code> 查看对象信息，需要参数：<code>-t</code> 类型， <code>-p</code> 内容。</p>
+<div class="highlight"><pre><span></span><code>$ git cat-file f58da
+
+# tree 的内容
+100644 blob 7e12803b85898fd0ae42d0a793c3eaf9f0cdd66e      28    t.ini
+100644 blob ee4d1e3b8e89a09e2f15df442a9113aefd5c0858      38    welcome.txt
+</code></pre></div>
+
+<p>对象保存在 <code>.git/objects</code> 目录下。</p>
+<p><img alt="对象库" src="imgs/git/%E5%AF%B9%E8%B1%A1%E5%BA%93.png" /></p>
+</li>
+<li>
+<p>HEAD</p>
+<p>通过 <code>$ git branch</code> 显示和管理分支。
+<div class="highlight"><pre><span></span><code># &#39;*&#39; 表示当前工作分支
+$ git branch
+* master
+</code></pre></div></p>
+<p><code>.git/HEAD</code> 指向 <code>.git/refs/heads/master</code>，而 <em>master</em> 指向最新提交的 <em>ID</em> 。</p>
+<p><code>.git/refs</code> 是保存引用的命名空间，其中 <code>.git/refs/heads</code>目录下的引用又称为分支。分支可以长格式表示，如 <code>/refs/heads/master</code>；也可以用短格式表示，如 <code>master</code>。</p>
+<div class="highlight"><pre><span></span><code># 查看引用对应的提交 ID
+$ git rev-parse master
+e695606fc5e31b2ff9038a48a3d363f4c21a3d86
+$ git rev-parse refs/heads/master
+e695606fc5e31b2ff9038a48a3d363f4c21a3d86
+$ git rev-parse HEAD
+e695606fc5e31b2ff9038a48a3d363f4c21a3d86
+</code></pre></div>
+
+</li>
+<li>
+<p>ID 的使用</p>
+<ul>
+<li>
+<p><code>^</code>表示父提交，可以链式使用</p>
+<div class="highlight"><pre><span></span><code>$ git rev-parse HEAD^
+$ git rev-parse HEAD^^
+</code></pre></div>
+
+</li>
+<li>
+<p><code>^&lt;n&gt;</code> 表示多个父提交中的某一个，从 <em>1</em> 开始</p>
+<div class="highlight"><pre><span></span><code>a573106^2
+</code></pre></div>
+
+</li>
+</ul>
+</li>
+<li>
+<p><code>~&lt;n&gt;</code> 表示第几代祖先提交</p>
+<div class="highlight"><pre><span></span><code>a573106~5
+a573106^^^^^
+</code></pre></div>
+
+</li>
+<li>
+<p><code>{tree}</code> 表示提交对应的树</p>
+<div class="highlight"><pre><span></span><code>a573106{tree}
+</code></pre></div>
+
+</li>
+<li>
+<p><code>:&lt;file&gt;</code>表示某次提交指定路径下的文件对象</p>
+<div class="highlight"><pre><span></span><code>a573106:a/hello.txt
+
+# 暂存区中的文件对象
+:a/hello.txt
+</code></pre></div>
+
+</li>
+</ul>
+<h3 id="25-git">2.5　Git 重置<a class="headerlink" href="#25-git" title="Permanent link">&para;</a></h3>
+<p>使用 <code>$ git log --graph --oneline</code> 查看提交历史，显示更短的 <em>ID</em> 。
+<div class="highlight"><pre><span></span><code>$ git log --graph --oneline
+* e695606 which version checked in?
+* a0c641e who does commit?
+* 9e8a761 initialized.
+</code></pre></div></p>
+<ul>
+<li>
+<p>重置到某次提交</p>
+<div class="highlight"><pre><span></span><code># 上一次
+$ git reset --hard HEAD^
+
+# 上上次
+$ git reset --hard HEAD^^
+
+# 最早一次
+$ git reset --hard 9e8a761
+</code></pre></div>
+
+<p>使用 <code>--hard</code> 参数，会破坏工作区未提交的改动。</p>
+</li>
+<li>
+<p>挽回错误重置</p>
+<div class="highlight"><pre><span></span><code># 默认提供分支日志功能
+$ git config core.logallrefupdates
+true
+
+# 显示最近 5 条 master 变更记录，最新的在最前，只显示每次改变的最终哈希值
+$ git reflog show master | head -5
+9e8a761 master@{0}: 9e8a761: updating HEAD
+e695606 master@{1}: HEAD^: updating HEAD
+4902dc3 master@{2}: commit: does master follow this new commit?
+e695606 master@{3}: commit: which version checked in?
+a0c641e master@{4}: commit (amend): who does commit?
+
+# 重置 _master_ 为两次改变之前的值
+$ git reset --hard master@{2}
+</code></pre></div>
+
+</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c"}</script>
+      
+      <script>
+        app = initialize({
+          base: ".",
+          features: ["instant"],
+          search: Object.assign({
+            worker: "assets/javascripts/worker/search.a68abb33.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+        <script src="extra.js"></script>
+      
+    
+  </body>
+</html>

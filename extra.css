@@ -1,0 +1,9 @@
+﻿.md-nav a{
+	width: 100%;
+  	white-space: nowrap;
+   	overflow: hidden;
+   	text-overflow: ellipsis;
+}
+code,kbd,pre{
+	font-family: "Fira Code",SFMono-Regular,Consolas,Menlo,"Noto Sans SC",monospace;
+}
